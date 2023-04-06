@@ -27,10 +27,10 @@
         </ion-input>
       </div>
       <div>
-        <ion-button onclick="calcularMedia(n1.value, n2.value)">Calcular Média</ion-button>
+        <ion-button (click)="calcularMedia(+n1, +n2)">Calcular Média</ion-button>
       </div>
       <div>
-        <ion-text></ion-text>
+        <ion-text>{{media}}</ion-text>
       </div>
     </div>
   </ion-content>

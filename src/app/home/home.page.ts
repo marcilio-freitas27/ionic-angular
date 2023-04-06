@@ -9,5 +9,15 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule],
 })
 export class HomePage {
-  constructor() {}
+
+  media: number;
+  constructor() {
+    this.media = 0;
+  }
+
+  ngOnInit() {}
+
+  async calcularMedia(n1: number, n2: number) {
+    this.media = n1.value + n2.value;
+  }
 }
